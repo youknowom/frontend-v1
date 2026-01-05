@@ -1,0 +1,40 @@
+
+.category-column {
+  border-right: 2px solid #ddd;
+
+}
+
+.category-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-column ul li {
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.category-column ul li:hover {
+  color: #ff7300;
+}
+
+.details-column h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details-column p {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.details-column p:hover {
+  color: #ff7300;
+}
+
+.megaContainer{
+  width: 100%;
+  
+}

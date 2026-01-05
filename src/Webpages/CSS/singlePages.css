@@ -1,0 +1,364 @@
+/* .single-product-section {
+  padding: 40px 0;
+} */
+
+.single-product-image-col {
+  text-align: center;
+}
+
+.single-product-img {
+  width: 100%;
+  height: 75vh;
+  max-height: 470px;
+  max-width: 350px;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+.single-product-info-col {
+  padding-left: 0px;
+  color: white;
+}
+
+.single-product-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.single-product-model {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.single-product-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.icon {
+  color: rgb(255, 115, 0);
+}
+
+.circle-item {
+  text-align: center;
+  margin: 0px, 20px;
+}
+
+.circle-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border: 3px solid rgb(255, 123, 0);
+}
+.five-image-bootstrap {
+  padding: 0px 0;
+}
+
+.circle-item p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+.circle {
+  margin-right: 30px;
+}
+
+.key-features h5 {
+  margin-bottom: 20px;
+}
+
+.feature-col {
+  margin-bottom: 15px;
+}
+
+.feature-row {
+  background: transparent;
+  border-left: 5px solid #ff7300;
+  /* padding: px; */
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.feature-row:hover {
+  /* background: #eef3ff; */
+  transform: translateX(5px);
+}
+
+.feature-number {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-row p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.single-button {
+  width: 120px;
+  background-color: rgb(0, 21, 49);
+  border: 1px solid black;
+  margin-bottom: 12px;
+  font-weight: 100px;
+}
+.single-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgb(0, 21, 49);
+  border: 1px solid black;
+  color: orange;
+}
+
+.single-button2 {
+  /* width: px; */
+  background-color: rgb(0, 21, 49);
+  border: 1px solid black;
+  margin-bottom: 12px;
+  font-weight: 100px;
+}
+.single-button2:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgb(0, 21, 49);
+  border: 1px solid black;
+  color: orange;
+}
+
+.single-button:focus-visible {
+  outline: none !important;
+}
+
+/* PRODUCT IMAGE WRAPPER - No Background */
+.product-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 20px;
+}
+
+.single-product-img {
+  width: 100%;
+  max-width: 350px;
+  background: transparent;
+  object-fit: contain;
+}
+
+/* ... Existing CSS ... */
+/* #e1efff */
+/* --- New CSS for Slanted Background Effect --- */
+/* Add/confirm this CSS is in singlePages.css */
+/* --- CSS for Slanted Background Effect --- */
+:root {
+  --main-background-color: #fb7500;
+  /*--slanted-background-color: #474747;   /*The light blue/whitish shade */
+  --slanted-background-color: #686868;
+  --slant-angle: 4deg;
+}
+
+.top-section-bg {
+  /* Set a light blue background for the entire area (now full width) */
+  background-color: var(--slanted-background-color);
+  /* padding: 40px 0;  */
+  position: relative;
+  overflow: hidden;
+  /* Removed border-radius as it might look odd on a full-width header */
+}
+
+.top-section-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-background-color);
+  transform: skewY(calc(var(--slant-angle) * -1.3));
+  transform-origin: top left;
+  top: 100%;
+  z-index: 1;
+}
+
+/* Ensure the content (Container > Row) stays on top of the slanted background effect */
+.top-section-bg .container {
+  /* Note the change to target the Container inside */
+  position: relative;
+  z-index: 2;
+}
+/* If you want to target the Row directly (less flexible): */
+/*
+.top-section-bg .row {
+    position: relative;
+    z-index: 2; 
+}
+*/
+
+@media (max-width: 768px) {
+  .single-product-section {
+    padding: 0px 0px;
+  }
+
+  .single-product-img {
+    max-width: 200px;
+    height: 350px;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    margin-top: 40px;
+  }
+
+  .single-product-info-col {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .single-product-title {
+    font-size: 22px;
+  }
+
+  .single-product-model {
+    font-size: 16px;
+  }
+
+  .single-product-description {
+    font-size: 14px;
+  }
+
+  .single-button {
+    margin-left: 10px;
+  }
+  .feature-row {
+    margin-left: 3px;
+  }
+  .top-section-bg::before {
+    top: 94%;
+  }
+  .circle {
+    margin-right: 0px;
+  }
+}
+
+/* ✅ Perfect center modal */
+.custom-inquiry-modal .modal-dialog {
+  max-width: 420px; /* Control width */
+  width: 90%;
+  margin: auto; /* Center horizontally + vertically */
+}
+
+/* ✅ Modal content */
+.custom-inquiry-modal .modal-content {
+  border-radius: 5px;
+  /* padding: 10px; */
+}
+
+/* ✅ Remove scrollbar */
+.custom-inquiry-modal .modal-body {
+  max-height: unset;
+  overflow: hidden;
+}
+
+/* ✅ Orange submit button */
+.inquiry-submit-button {
+  background-color: #ff7a00;
+  border: none;
+  font-weight: 600;
+}
+
+.inquiry-submit-button:hover {
+  background-color: #e66f00;
+}
+
+/* ✅ Dark backdrop */
+.modal-backdrop.show {
+  opacity: 0.6;
+}
+
+/* ✅ Prevent page scroll when modal open */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* ✅ Ensure modal on top of navbar */
+.modal {
+  z-index: 1055 !important;
+}
+
+.modal-backdrop {
+  z-index: 1050 !important;
+}
+.modal-dialog {
+  animation: pop 0.2s ease-out;
+}
+.custom-inquiry-modal {
+  margin-top: 69px;
+  width: 400px;
+}
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 576px) {
+  .custom-inquiry-modal .modal-dialog {
+    width: 70%;
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .custom-inquiry-modal .modal-content {
+    padding: 12px;
+    border-radius: 6px;
+  }
+
+  .custom-inquiry-modal .modal-header {
+    padding: 10px 12px;
+  }
+
+  .custom-inquiry-modal .modal-body {
+    padding: 10px 12px;
+  }
+
+  .custom-inquiry-modal label {
+    font-size: 14px;
+  }
+
+  .custom-inquiry-modal input,
+  .custom-inquiry-modal textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .inquiry-submit-button {
+    font-size: 15px;
+    padding: 12px;
+  }
+  .custom-inquiry-modal {
+    width: 90%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+.form-control {
+  border: 1px solid gray;
+}
+.five-image-container .row {
+  padding-right: 0;
+}
+
+body.modal-open {
+  overflow: hidden !important;
+  padding-right: 0 !important;
+}

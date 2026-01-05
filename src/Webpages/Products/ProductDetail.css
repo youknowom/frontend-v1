@@ -1,0 +1,34 @@
+/* singlePages.css */
+
+/* Primary theme button */
+.theme-button {
+  background-color: #eb7a11; /* primary theme color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.theme-button:hover {
+  background-color: #ff9100; /* slightly brighter hover */
+  color: white;
+}
+
+/* Secondary theme button */
+.theme-button-secondary {
+  background-color: white;
+  color: #eb7a11;
+  border: 2px solid #eb7a11;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.theme-button-secondary:hover {
+  background-color: #eb7a11;
+  color: white;
+}

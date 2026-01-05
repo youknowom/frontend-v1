@@ -40,11 +40,11 @@
   text-align: center;
   color: white;
   z-index: 10;
-  padding: clamp(16px, 5vw, 40px); 
+  padding: clamp(16px, 5vw, 40px);
 }
 
 .hero-heading {
-  font-size: 48px; 
+  font-size: 48px;
   font-weight: 300;
   margin-bottom: 0.5rem;
   line-height: 1.2;
@@ -80,7 +80,6 @@
   background-color: rgb(250, 150, 18);
 }
 
-
 /* Secondary theme button */
 /* .theme-button-secondary {
   background-color:#eb7a11;
@@ -98,14 +97,11 @@
   color: #eb7a11;
 } */
 
-
-
-
 /* Secondary theme button */
 .theme-button-secondary {
-  background-color: white;     
-  color: #eb7a11;               
-  border: 2px solid #eb7a11;    
+  background-color: white;
+  color: #eb7a11;
+  border: 2px solid #eb7a11;
   padding: 10px 20px;
   font-weight: 600;
   border-radius: 25px;
@@ -113,8 +109,8 @@
 }
 
 .theme-button-secondary:hover {
-  background-color: #eb7a11;   
-  color: white;                 
+  background-color: #eb7a11;
+  color: white;
 }
 
 /* --- END NEW STYLES --- */
@@ -332,6 +328,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .page-wrapper img {
@@ -370,7 +369,9 @@
   overflow: hidden;
   background: #fff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .certificate-card:hover {
@@ -445,13 +446,14 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none !important;
   background: rgb(251, 252, 252);
-  transition: transform 0.9s ease-out, box-shadow 0.9s ease-out;
+  transition:
+    transform 0.9s ease-out,
+    box-shadow 0.9s ease-out;
   position: relative;
   z-index: 1;
 }
 
 .value-product-card:hover {
-  
   z-index: 15;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 18px 35px;
 }
@@ -506,7 +508,6 @@
   filter: blur(1);
 }
 
-
 /* Old value card styles - keeping for backward compatibility */
 .value-card {
   background: #ffffff;
@@ -545,7 +546,9 @@
 }
 
 .certificate-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .certificate-card:hover {
@@ -565,7 +568,6 @@
   max-height: 140px;
   object-fit: contain;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 992px) {

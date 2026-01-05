@@ -34,17 +34,17 @@
   padding-bottom: 5px;
 }
 
-/* Make footer top content a single non-wrapping row */
+/* Make footer top content responsive */
 .footerRow {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: flex-start;
 }
 
 .footer-col {
-  flex: 1 1 0;
-  min-width: 150px;
+  flex: 1 1 200px;
+  min-width: 200px;
 }
 
 .footerImg {
@@ -135,18 +135,24 @@
 @media (max-width: 768px) {
   .footer-section {
     min-height: auto;
-    padding: 25px 0 15px;
+    padding: 20px 0 10px;
   }
 
   .footerRow {
     padding-left: 20px;
     padding-right: 20px;
+    gap: 15px;
+  }
+
+  .footer-col {
+    flex: 1 1 100%;
+    min-width: 100%;
   }
 
   .footer-subtitle {
     font-size: 16px;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin-bottom: 12px;
+    margin-top: 15px;
   }
 
   .footer-subtitle::after {
@@ -156,7 +162,7 @@
 
   .footerImg {
     height: 120px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -169,7 +175,7 @@
 
   .footer-text {
     font-size: 13px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 
   .footer-bottom {
@@ -185,15 +191,23 @@
   .footerRow {
     padding-left: 15px;
     padding-right: 15px;
+    gap: 10px;
+  }
+
+  .footer-col {
+    flex: 1 1 100%;
+    min-width: 100%;
   }
 
   .footer-subtitle {
     font-size: 15px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    margin-top: 12px;
   }
 
   .footerImg {
     height: 100px;
+    margin-bottom: 10px;
   }
 
   .footer-links li {
@@ -203,6 +217,7 @@
 
   .footer-text {
     font-size: 12px;
+    margin-bottom: 6px;
   }
 
   .footer-bottom {

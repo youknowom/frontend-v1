@@ -43,13 +43,25 @@
 /* Add padding to body to account for fixed navbar */
 body {
   padding-top: 80px;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .scroll-to-top-btn {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background:rgb(255, 145, 0);
+  background: rgb(255, 145, 0);
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -71,5 +83,3 @@ body {
   color: rgb(255, 153, 0);
   transform: translateY(-3px);
 }
-
-

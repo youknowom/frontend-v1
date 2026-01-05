@@ -60,7 +60,7 @@
 
 //           {/* <Col className="mb-4 footer-col">
 //             <h5 className="footer-subtitle">Contact Us</h5>
-        
+
 //             <p className="footer-text">
 //               {" "}
 //               <b style={{ color: "orange" }}> Email :</b>{" "}
@@ -113,8 +113,6 @@
 
 // export default Footer;
 
-
-
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./CSS/footer.css";
@@ -133,7 +131,7 @@ const Footer = () => {
           </Col>
 
           <Col className="mb-4 footer-col">
-            <h5 className="footer-subtitle">Sector Wise Products</h5>
+            <h5 className="footer-subtitle">Sectors</h5>
             <ul className="footer-links">
               <li>
                 <Link to="/utilitySector" className="breadcrumb-link">
@@ -201,7 +199,8 @@ const Footer = () => {
           <Col className="mb-4 footer-col">
             <h5 className="footer-subtitle">Contact Us</h5>
             <p className="footer-text">
-              <b style={{ color: "orange" }}> Email :</b> tathastueams.mkt@gmail.com
+              <b style={{ color: "orange" }}> Email :</b>{" "}
+              tathastueams.mkt@gmail.com
             </p>
             <p className="footer-text">
               <b style={{ color: "orange" }}> Phone :</b> +91 77700 18893

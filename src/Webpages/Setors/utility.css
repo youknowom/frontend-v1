@@ -178,6 +178,30 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 18px 35px;
   transform: translateY(-8px) scale(1.02);
 }
+
+/* Bounce animation */
+/* @keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(6px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+}
+
+.icon-animate {
+  size: 20px;
+  display: inline-block;
+  animation: bounce 2s infinite;
+} */
+
 /* RESPONSIVE */
 
 @media (max-width: 1199px) and (min-width: 992px) {

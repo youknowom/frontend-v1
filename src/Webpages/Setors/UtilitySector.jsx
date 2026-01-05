@@ -60,7 +60,6 @@ const UtilitySector = () => {
 
   // const productsNew = productsData;
 
- 
   const products = [
     {
       id: 1,
@@ -214,7 +213,10 @@ const UtilitySector = () => {
 
             <div className="hero-buttons">
               <Button className="hero-btn-primary" onClick={scrollToProducts}>
-                View Products <FiChevronsDown />
+                View Products
+                <span className="icon-animate">
+                  <FiChevronsDown />
+                </span>
               </Button>
             </div>
           </Col>

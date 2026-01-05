@@ -1,4 +1,4 @@
-// Import all product images
+// Import all product image
 import dev1 from "../assets/ProductsImage/1.1.png";
 import dev2 from "../assets/ProductsImage/2.png";
 import dev3 from "../assets/ProductsImage/3.png";

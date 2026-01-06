@@ -9,7 +9,6 @@
 // import { productsData } from "../data/productsData";
 // import { useLocation } from "react-router-dom";
 
-
 // export const AllProducts = () => {
 //   useEffect(() => {
 //     AOS.init({ duration: 1000, once: false });
@@ -218,7 +217,6 @@
 //   );
 // };
 
-
 import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./CSS/allProducts.css";
@@ -226,6 +224,8 @@ import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { productsData } from "../data/productsData";
+import { motion } from "framer-motion";
+import { FiArrowRight } from "react-icons/fi";
 
 export const AllProducts = () => {
   const navigate = useNavigate();
@@ -294,11 +294,21 @@ export const AllProducts = () => {
       <Container className="mt-5">
         <Row>
           {/* LEFT FILTER SIDEBAR */}
-          <Col lg={3} md={4} className="mb-4 sticky-filter-col d-none d-md-block">
+          <Col
+            lg={3}
+            md={4}
+            className="mb-4 sticky-filter-col d-none d-md-block"
+          >
             <div className="filters-box">
               <h5 className="filter-heading">Products By Categories</h5>
               <ul className="filter-list">
-                {["All Products","Insulation Tester","Digital Earth Resistance Tester","Digital Micro Ohm Meter","High Voltage Probe"].map((filter) => (
+                {[
+                  "All Products",
+                  "Insulation Tester",
+                  "Digital Earth Resistance Tester",
+                  "Digital Micro Ohm Meter",
+                  "High Voltage Probe",
+                ].map((filter) => (
                   <li
                     key={filter}
                     className={activeFilter === filter ? "active-filter" : ""}
@@ -318,7 +328,13 @@ export const AllProducts = () => {
               onChange={(e) => setActiveFilter(e.target.value)}
               className="mobile-filter-dropdown"
             >
-              {["All Products","Insulation Tester","Digital Earth Resistance Tester","Digital Micro Ohm Meter","High Voltage Probe"].map((filter) => (
+              {[
+                "All Products",
+                "Insulation Tester",
+                "Digital Earth Resistance Tester",
+                "Digital Micro Ohm Meter",
+                "High Voltage Probe",
+              ].map((filter) => (
                 <option key={filter} value={filter}>
                   {filter}
                 </option>
@@ -333,20 +349,40 @@ export const AllProducts = () => {
                 <h4>No products found</h4>
               ) : (
                 filteredProducts.map((item) => (
-                  <Col key={item.id} lg={4} md={6} sm={6} xs={6} className="mb-4">
+                  <Col
+                    key={item.id}
+                    lg={4}
+                    md={6}
+                    sm={6}
+                    xs={6}
+                    className="mb-4"
+                  >
                     <Card className="product-card">
                       <div className="img-wrapper">
                         <Card.Img src={item.img} className="product-img" />
                       </div>
 
                       <Card.Body className="text-center">
-                        <Card.Title className="product-title">{item.name}</Card.Title>
+                        <Card.Title className="product-title">
+                          {item.name}
+                        </Card.Title>
                         <p className="product-model">{item.model}</p>
                         <Button
                           className="btn-orange"
                           onClick={() => navigate(`/product/${item.id}`)}
                         >
                           Explore
+                          <motion.span
+                            className="arrow-icon"
+                            animate={{ x: [0, 5, 0] }}
+                            transition={{
+                              duration: 1.5,
+                              repeat: Infinity,
+                              ease: "easeInOut",
+                            }}
+                          >
+                            <FiArrowRight />
+                          </motion.span>
                         </Button>
                       </Card.Body>
                     </Card>

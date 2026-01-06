@@ -87,16 +87,30 @@
 
 /* ORANGE BUTTON */
 .btn-orange {
-  width: 90px;
-  height: 32px;
+  /* width: 90px;
+  height: 32px; */
   background-color: #ff7300 !important;
   border: none !important;
-  border-radius: 5px;
+  border-radius: 20px;
   font-weight: 600;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn-orange .arrow-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  margin-left: 2px;
 }
 
 .btn-orange:hover {
   background-color: #c25500 !important;
+  box-shadow: 0 4px 8px rgba(255, 115, 0, 0.3);
 }
 
 @media (max-width: 993px) {

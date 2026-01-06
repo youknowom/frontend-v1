@@ -37,8 +37,9 @@ import img10 from "../../assets/Sector Images/1Utility/Overhead.jpg";
 import img11 from "../../assets/Sector Images/1Utility/line.jpg";
 import img12 from "../../assets/Sector Images/1Utility/CT-PT.PNG";
 import { BiDownArrow } from "react-icons/bi";
-import { FiChevronDown, FiChevronsDown } from "react-icons/fi";
+import { FiChevronDown, FiChevronsDown, FiArrowRight } from "react-icons/fi";
 import { productsData } from "../../data/productsData";
+import { motion } from "framer-motion";
 
 const UtilitySector = () => {
   const navigate = useNavigate();
@@ -253,6 +254,17 @@ const UtilitySector = () => {
                     onClick={() => navigate(product.button)}
                   >
                     Explore
+                    <motion.span
+                      className="arrow-icon"
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{
+                        duration: 1.5,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}
+                    >
+                      <FiArrowRight />
+                    </motion.span>
                   </Button>
                 </Card.Body>
               </Card>
